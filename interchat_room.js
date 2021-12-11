@@ -20,7 +20,7 @@ var firebaseConfig = {
       })
 
       localStorage.setItem("room_name",room_name);
-      window.location = "interchat_page.html";        
+      window.location = "inter_page.html";        
   }
 
 function logout() {
@@ -43,5 +43,5 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
  function redirectTRN(name){
        console.log(name);
        localStorage.setItem("room_name",name);
-       window.location = "interchat_page.html";
+       window.location = "inter_page.html";
  }
